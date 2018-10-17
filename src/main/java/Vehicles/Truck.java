@@ -54,4 +54,12 @@ public class Truck extends Vehicle implements IFuel, IPaint, IRun {
             return "refueling... Complete!";
         }
     }
+
+    public Engine getEngine(){
+        return engine;
+    }
+
+    public Tank getTank(){
+        return tank;
+    }
 }

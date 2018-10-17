@@ -28,4 +28,58 @@ public class MotorcycleTest {
         assertEquals(300, motorcycle.getFuelLevel());
     }
 
+    @Test
+    public void notenough() {
+        motorcycle.travel(200);
+        assertEquals(100, motorcycle.getFuelLevel());
+    }
+
+    @Test
+    public void refuel(){
+        assertEquals("refueling... Complete!", motorcycle.refuel());
+        assertEquals(500, motorcycle.getFuelLevel());
+    }
+
+    @Test
+    public void startEngine(){
+        assertEquals("Vroooom", motorcycle.startEngine());
+    }
+
+    @Test
+    public void stopEngine(){
+        assertEquals("Engine stopped.", motorcycle.stopEngine());
+    }
+
+
+    @Test
+    public void getDoors() {
+        assertEquals(0, motorcycle.getNumOfDoors());
+    }
+
+    @Test
+    public void getWheels() {
+        assertEquals(2, motorcycle.getNumOfWheels());
+    }
+
+    @Test
+    public void getColour() {
+        assertEquals(Colour.BLACK, motorcycle.getColour());
+    }
+
+    @Test
+    public void getPrice() {
+        assertEquals(2000.00, motorcycle.getPrice(), 0.1);
+    }
+
+    @Test
+    public void getEngine() {
+        assertEquals(engine, motorcycle.getEngine());
+    }
+
+    @Test
+    public void getTank() {
+        assertEquals(tank, motorcycle.getTank());
+    }
+    
+    
 }

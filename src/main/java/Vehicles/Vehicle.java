@@ -44,4 +44,6 @@ public abstract class Vehicle {
     public void setColour(Colour colour) {
         this.colour = colour;
     }
+
+
 }

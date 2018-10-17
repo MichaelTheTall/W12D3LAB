@@ -55,5 +55,12 @@ public class Car extends Vehicle implements IFuel, IPaint, IRun {
         }
     }
 
+    public Engine getEngine(){
+        return engine;
+    }
+
+    public Tank getTank(){
+        return tank;
+    }
 
 }
